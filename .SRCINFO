@@ -1,0 +1,53 @@
+pkgbase = linux-t2-bin
+	pkgdesc = Prebuilt Linux for T2 Macs
+	pkgver = 7.1.8.arch1
+	pkgrel = 3.1
+	url = https://github.com/NoaHimesaka1873/linux-t2-arch
+	arch = x86_64
+	license = GPL-2.0-only
+	makedepends = libarchive
+	noextract = linux-t2-7.1.8.arch1-3-x86_64.pkg.tar.zst
+	noextract = linux-t2-headers-7.1.8.arch1-3-x86_64.pkg.tar.zst
+	options = !debug
+	options = !strip
+	source = https://github.com/NoaHimesaka1873/linux-t2-arch/releases/download/v7.1.8.arch1/linux-t2-7.1.8.arch1-3-x86_64.pkg.tar.zst
+	source = https://github.com/NoaHimesaka1873/linux-t2-arch/releases/download/v7.1.8.arch1/linux-t2-headers-7.1.8.arch1-3-x86_64.pkg.tar.zst
+	sha256sums = 382afe894b6383f75df5428bf2664bab77f6f8e055adefe9199e307ab639e82f
+	sha256sums = 702806f354e2a051959d36eb706f813dbdf0d090d715f756f1c0fcedc1d50474
+
+pkgname = linux-t2-bin
+	pkgdesc = Prebuilt Linux kernel and modules for T2 Macs
+	depends = coreutils
+	depends = initramfs
+	depends = kmod
+	optdepends = linux-t2-headers-bin: prebuilt headers and scripts for building modules
+	optdepends = linux-firmware: firmware images needed for some devices
+	optdepends = scx-scheds: to use sched-ext schedulers
+	optdepends = wireless-regdb: to set the correct wireless channels of your country
+	provides = linux-t2=7.1.8.arch1-3
+	provides = linux=7.1.8.arch1
+	provides = KSMBD-MODULE
+	provides = NTSYNC-MODULE
+	provides = VIRTUALBOX-GUEST-MODULES
+	provides = WIREGUARD-MODULE
+	conflicts = linux-t2
+	conflicts = apple-gmux-t2-dkms-git
+	replaces = apple-gmux-t2-dkms-git
+	replaces = virtualbox-guest-modules-arch
+	replaces = wireguard-arch
+
+pkgname = linux-t2-headers-bin
+	pkgdesc = Prebuilt headers and scripts for building modules for the T2 Mac kernel
+	depends = binutils
+	depends = glibc
+	depends = libelf
+	depends = libgcc
+	depends = openssl
+	depends = pahole
+	depends = xxhash
+	depends = zlib
+	depends = zstd
+	provides = linux-t2-headers=7.1.8.arch1-3
+	provides = LINUX-HEADERS
+	provides = linux-headers
+	conflicts = linux-t2-headers
