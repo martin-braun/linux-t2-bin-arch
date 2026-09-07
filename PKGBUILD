@@ -11,8 +11,8 @@ pkgname=(
     linux-t2-bin
     linux-t2-headers-bin
 )
-pkgver=7.1.8.arch1
-_upstream_pkgrel=3
+pkgver=7.2.3.arch1
+_upstream_pkgrel=1
 pkgrel="${_upstream_pkgrel}.1"
 
 pkgdesc='Prebuilt Linux for T2 Macs'
@@ -37,8 +37,8 @@ noextract=(
 )
 
 sha256sums=(
-    '382afe894b6383f75df5428bf2664bab77f6f8e055adefe9199e307ab639e82f'
-    '702806f354e2a051959d36eb706f813dbdf0d090d715f756f1c0fcedc1d50474'
+    '240abd612c9d4fa4c879fe375ac790ffc643534bf1aeac5d031ec97642657dcb'
+    'df145255104b326e87e0ea8c72a08ac5db8363e786f6db5d6a4732a2c1d25288'
 )
 
 package_linux-t2-bin() {
