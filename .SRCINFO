@@ -1,19 +1,19 @@
 pkgbase = linux-t2-bin
 	pkgdesc = Prebuilt Linux for T2 Macs
-	pkgver = 7.2.3.arch1
+	pkgver = 7.2.4.arch1
 	pkgrel = 1.1
 	url = https://github.com/NoaHimesaka1873/linux-t2-arch
 	arch = x86_64
 	license = GPL-2.0-only
 	makedepends = libarchive
-	noextract = linux-t2-7.2.3.arch1-1-x86_64.pkg.tar.zst
-	noextract = linux-t2-headers-7.2.3.arch1-1-x86_64.pkg.tar.zst
+	noextract = linux-t2-7.2.4.arch1-1-x86_64.pkg.tar.zst
+	noextract = linux-t2-headers-7.2.4.arch1-1-x86_64.pkg.tar.zst
 	options = !debug
 	options = !strip
-	source = https://github.com/NoaHimesaka1873/linux-t2-arch/releases/download/v7.2.3.arch1/linux-t2-7.2.3.arch1-1-x86_64.pkg.tar.zst
-	source = https://github.com/NoaHimesaka1873/linux-t2-arch/releases/download/v7.2.3.arch1/linux-t2-headers-7.2.3.arch1-1-x86_64.pkg.tar.zst
-	sha256sums = 240abd612c9d4fa4c879fe375ac790ffc643534bf1aeac5d031ec97642657dcb
-	sha256sums = df145255104b326e87e0ea8c72a08ac5db8363e786f6db5d6a4732a2c1d25288
+	source = https://github.com/NoaHimesaka1873/linux-t2-arch/releases/download/v7.2.4.arch1/linux-t2-7.2.4.arch1-1-x86_64.pkg.tar.zst
+	source = https://github.com/NoaHimesaka1873/linux-t2-arch/releases/download/v7.2.4.arch1/linux-t2-headers-7.2.4.arch1-1-x86_64.pkg.tar.zst
+	sha256sums = 03f5ff16c4c20e79ba6299c209f3259836318eed6619112fc597c3f5173a3a47
+	sha256sums = 6208708aac817294a41ce567aea64867699ee8f25d09be608b67b92a264e2423
 
 pkgname = linux-t2-bin
 	pkgdesc = Prebuilt Linux kernel and modules for T2 Macs
@@ -24,8 +24,8 @@ pkgname = linux-t2-bin
 	optdepends = linux-firmware: firmware images needed for some devices
 	optdepends = scx-scheds: to use sched-ext schedulers
 	optdepends = wireless-regdb: to set the correct wireless channels of your country
-	provides = linux-t2=7.2.3.arch1-1
-	provides = linux=7.2.3.arch1
+	provides = linux-t2=7.2.4.arch1-1
+	provides = linux=7.2.4.arch1
 	provides = KSMBD-MODULE
 	provides = NTSYNC-MODULE
 	provides = VIRTUALBOX-GUEST-MODULES
@@ -47,7 +47,7 @@ pkgname = linux-t2-headers-bin
 	depends = xxhash
 	depends = zlib
 	depends = zstd
-	provides = linux-t2-headers=7.2.3.arch1-1
+	provides = linux-t2-headers=7.2.4.arch1-1
 	provides = LINUX-HEADERS
 	provides = linux-headers
 	conflicts = linux-t2-headers

@@ -11,7 +11,7 @@ pkgname=(
     linux-t2-bin
     linux-t2-headers-bin
 )
-pkgver=7.2.3.arch1
+pkgver=7.2.4.arch1
 _upstream_pkgrel=1
 pkgrel="${_upstream_pkgrel}.1"
 
@@ -37,8 +37,8 @@ noextract=(
 )
 
 sha256sums=(
-    '240abd612c9d4fa4c879fe375ac790ffc643534bf1aeac5d031ec97642657dcb'
-    'df145255104b326e87e0ea8c72a08ac5db8363e786f6db5d6a4732a2c1d25288'
+    '03f5ff16c4c20e79ba6299c209f3259836318eed6619112fc597c3f5173a3a47'
+    '6208708aac817294a41ce567aea64867699ee8f25d09be608b67b92a264e2423'
 )
 
 package_linux-t2-bin() {
