@@ -11,7 +11,7 @@ pkgname=(
     linux-t2-bin
     linux-t2-headers-bin
 )
-pkgver=7.2.4.arch1
+pkgver=7.2.6.arch2
 _upstream_pkgrel=1
 pkgrel="${_upstream_pkgrel}.1"
 
@@ -36,10 +36,8 @@ noextract=(
     "${_headers}"
 )
 
-sha256sums=(
-    '03f5ff16c4c20e79ba6299c209f3259836318eed6619112fc597c3f5173a3a47'
-    '6208708aac817294a41ce567aea64867699ee8f25d09be608b67b92a264e2423'
-)
+sha256sums=('b41bf850f160ddc421555e143ff8bc68607eb7ac3387989483d2d1ec5d474ee0'
+            'a82af733c54ae73b768632602a4635e9380f8788031ad0631c8ceeec80c6de79')
 
 package_linux-t2-bin() {
     pkgdesc='Prebuilt Linux kernel and modules for T2 Macs'
